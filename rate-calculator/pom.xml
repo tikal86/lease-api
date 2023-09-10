@@ -14,10 +14,6 @@
 	<name>rate</name>
 	<description>Rate calculator api</description>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-rest</artifactId>
-		</dependency>
 
 	</dependencies>
 
