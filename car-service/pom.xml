@@ -10,6 +10,14 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+         <properties>
+                          <!-- Test dependencies versions -->
+        <version.maven-surefire-plugin>3.1.2</version.maven-surefire-plugin>
+        <version.maven-failsafe-plugin>3.1.2</version.maven-failsafe-plugin>
+        <version.rest-assured>4.5.1</version.rest-assured> <!-- use same version as in spring-boot-dependencies bom -->
+        <version.jacoco>0.8.10</version.jacoco>
+
+         </properties>
     <artifactId>car-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <build>
