@@ -1,0 +1,214 @@
+✘ andre@Lenovo-H50-50  /media/andre/Data/git/repo/svb/lease-api   master ±  ./start.sh
+ andre@Lenovo-H50-50  /media/andre/Data/git/repo/svb/lease-api   master ±  [INFO] Scanning for projects...
+[INFO] Scanning for projects...
+[INFO] Scanning for projects...
+[INFO] Scanning for projects...
+[INFO]
+[INFO] -------------------< nl.svb.lease:customer-service >--------------------
+[INFO] Building customer-service 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] >>> spring-boot-maven-plugin:2.1.18.RELEASE:run (default-cli) > test-compile @ customer-service >>>
+[INFO]
+[INFO] ----------------------< nl.svb.lease:car-service >----------------------
+[INFO] Building car-service 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] >>> spring-boot-maven-plugin:2.1.18.RELEASE:run (default-cli) > test-compile @ car-service >>>
+[INFO]
+[INFO] -------------------< nl.svb.lease:interest-service >--------------------
+[INFO] Building interest-service 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] >>> spring-boot-maven-plugin:2.1.18.RELEASE:run (default-cli) > test-compile @ interest-service >>>
+[INFO]
+[INFO] --------------------< nl.svb.lease:rate-calculator >--------------------
+[INFO] Building rate 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] >>> spring-boot-maven-plugin:2.1.18.RELEASE:run (default-cli) > test-compile @ rate-calculator >>>
+[INFO] [INFO]
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ car-service ---
+[INFO] [INFO]
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ interest-service ---
+
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ rate-calculator ---
+
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ customer-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource[INFO] Copying 1 resource
+
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO]
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ rate-calculator ---[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ interest-service ---
+
+[INFO] Copying 0 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ car-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ customer-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] Changes detected - recompiling the module!
+[INFO]
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ interest-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /media/andre/Data/git/repo/svb/lease-api/interest-service/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ interest-service ---
+[INFO] Compiling 1 source file to /media/andre/Data/git/repo/svb/lease-api/rate-calculator/target/classes
+[INFO] Changes detected - recompiling the module!
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] <<< spring-boot-maven-plugin:2.1.18.RELEASE:run (default-cli) < test-compile @ interest-service <<<
+[INFO]
+[INFO]
+[INFO] --- spring-boot-maven-plugin:2.1.18.RELEASE:run (default-cli) @ interest-service ---
+[INFO] Compiling 4 source files to /media/andre/Data/git/repo/svb/lease-api/car-service/target/classes
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ customer-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /media/andre/Data/git/repo/svb/lease-api/customer-service/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ customer-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] <<< spring-boot-maven-plugin:2.1.18.RELEASE:run (default-cli) < test-compile @ customer-service <<<
+[INFO]
+[INFO]
+[INFO] --- spring-boot-maven-plugin:2.1.18.RELEASE:run (default-cli) @ customer-service ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ rate-calculator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /media/andre/Data/git/repo/svb/lease-api/rate-calculator/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ rate-calculator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /media/andre/Data/git/repo/svb/lease-api/rate-calculator/target/test-classes
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v2.1.18.RELEASE)
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v2.1.18.RELEASE)
+
+[INFO]
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ car-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /media/andre/Data/git/repo/svb/lease-api/car-service/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ car-service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /media/andre/Data/git/repo/svb/lease-api/car-service/target/test-classes
+2023-09-10 22:03:20.327  INFO 8283 --- [           main] n.s.l.i.InterestServiceApplication       : Starting InterestServiceApplication on Lenovo-H50-50 with PID 8283 (/media/andre/Data/git/repo/svb/lease-api/interest-service/target/classes started by andre in /media/andre/Data/git/repo/svb/lease-api/interest-service)
+2023-09-10 22:03:20.347  INFO 8283 --- [           main] n.s.l.i.InterestServiceApplication       : No active profile set, falling back to default profiles: default
+2023-09-10 22:03:20.369  INFO 8282 --- [           main] n.s.l.c.CustomerServiceApplication       : Starting CustomerServiceApplication on Lenovo-H50-50 with PID 8282 (/media/andre/Data/git/repo/svb/lease-api/customer-service/target/classes started by andre in /media/andre/Data/git/repo/svb/lease-api/customer-service)
+2023-09-10 22:03:20.448  INFO 8282 --- [           main] n.s.l.c.CustomerServiceApplication       : No active profile set, falling back to default profiles: default
+[INFO]
+[INFO] <<< spring-boot-maven-plugin:2.1.18.RELEASE:run (default-cli) < test-compile @ rate-calculator <<<
+[INFO]
+[INFO]
+[INFO] --- spring-boot-maven-plugin:2.1.18.RELEASE:run (default-cli) @ rate-calculator ---
+[INFO]
+[INFO] <<< spring-boot-maven-plugin:2.1.18.RELEASE:run (default-cli) < test-compile @ car-service <<<
+[INFO]
+[INFO]
+[INFO] --- spring-boot-maven-plugin:2.1.18.RELEASE:run (default-cli) @ car-service ---
+2023-09-10 22:03:23.990  INFO 8282 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$5ce6360a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v2.1.18.RELEASE)
+
+2023-09-10 22:03:24.099  INFO 8283 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$1ef4d233] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v2.1.18.RELEASE)
+
+2023-09-10 22:03:24.372  INFO 8284 --- [           main] n.s.l.r.RateCalculatorApplication        : Starting RateCalculatorApplication on Lenovo-H50-50 with PID 8284 (/media/andre/Data/git/repo/svb/lease-api/rate-calculator/target/classes started by andre in /media/andre/Data/git/repo/svb/lease-api/rate-calculator)
+2023-09-10 22:03:24.398  INFO 8284 --- [           main] n.s.l.r.RateCalculatorApplication        : No active profile set, falling back to default profiles: default
+2023-09-10 22:03:24.614  INFO 8281 --- [           main] n.s.l.carservice.CarServiceApplication   : Starting CarServiceApplication on Lenovo-H50-50 with PID 8281 (/media/andre/Data/git/repo/svb/lease-api/car-service/target/classes started by andre in /media/andre/Data/git/repo/svb/lease-api/car-service)
+2023-09-10 22:03:24.628  INFO 8281 --- [           main] n.s.l.carservice.CarServiceApplication   : No active profile set, falling back to default profiles: default
+2023-09-10 22:03:25.346  INFO 8282 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2023-09-10 22:03:25.508  INFO 8282 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-10 22:03:25.515  INFO 8282 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-09-10 22:03:25.561  INFO 8283 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8092 (http)
+2023-09-10 22:03:25.702  INFO 8283 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-10 22:03:25.718  INFO 8283 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-09-10 22:03:25.917  INFO 8282 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-10 22:03:25.920  INFO 8282 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5289 ms
+2023-09-10 22:03:26.109  INFO 8283 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-10 22:03:26.109  INFO 8283 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5588 ms
+2023-09-10 22:03:27.805  INFO 8284 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$2460e5d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-10 22:03:27.953  INFO 8281 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$3469c267] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-10 22:03:28.060  INFO 8283 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-10 22:03:28.076  INFO 8282 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-10 22:03:28.631  INFO 8284 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2023-09-10 22:03:28.755  INFO 8284 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-10 22:03:28.760  INFO 8284 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-09-10 22:03:29.046  INFO 8284 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-10 22:03:29.049  INFO 8284 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4474 ms
+2023-09-10 22:03:29.141  INFO 8281 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-09-10 22:03:29.337  INFO 8281 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-10 22:03:29.338  INFO 8281 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-09-10 22:03:29.524  INFO 8283 --- [           main] .s.s.UserDetailsServiceAutoConfiguration :
+
+Using generated security password: 0970325e-39ce-4ae1-afda-e63bb6136b78
+
+2023-09-10 22:03:29.560  INFO 8282 --- [           main] .s.s.UserDetailsServiceAutoConfiguration :
+
+Using generated security password: be5b8c79-a77e-4060-82b3-1d0369f9ceaa
+
+2023-09-10 22:03:29.561  INFO 8281 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-10 22:03:29.561  INFO 8281 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4781 ms
+2023-09-10 22:03:29.986  INFO 8282 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36703533, org.springframework.security.web.context.SecurityContextPersistenceFilter@323e71e3, org.springframework.security.web.header.HeaderWriterFilter@57a57914, org.springframework.security.web.csrf.CsrfFilter@4420a263, org.springframework.security.web.authentication.logout.LogoutFilter@5b6a4f54, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4238d28d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6de0afa7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@24f8151c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4ff723ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c47d751, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57a62ae3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35047576, org.springframework.security.web.session.SessionManagementFilter@5e221b5f, org.springframework.security.web.access.ExceptionTranslationFilter@70f8ec29, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73c33254]
+2023-09-10 22:03:30.001  INFO 8283 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5344749d, org.springframework.security.web.context.SecurityContextPersistenceFilter@7102444e, org.springframework.security.web.header.HeaderWriterFilter@56860dff, org.springframework.security.web.csrf.CsrfFilter@3e2b01c0, org.springframework.security.web.authentication.logout.LogoutFilter@442a5d09, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1708e1cf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@71e3527f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@44775474, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@26c447be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18cc7f68, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3baebfcc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3db76f74, org.springframework.security.web.session.SessionManagementFilter@58db2d04, org.springframework.security.web.access.ExceptionTranslationFilter@6b29045a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b612ac5]
+2023-09-10 22:03:30.352  INFO 8283 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8092 (http) with context path ''
+2023-09-10 22:03:30.358  INFO 8283 --- [           main] n.s.l.i.InterestServiceApplication       : Started InterestServiceApplication in 11.256 seconds (JVM running for 21.149)
+2023-09-10 22:03:30.375  INFO 8282 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2023-09-10 22:03:30.382  INFO 8282 --- [           main] n.s.l.c.CustomerServiceApplication       : Started CustomerServiceApplication in 11.097 seconds (JVM running for 21.168)
+2023-09-10 22:03:30.927  INFO 8284 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-10 22:03:31.092  INFO 8281 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-10 22:03:31.712  INFO 8284 --- [           main] .s.s.UserDetailsServiceAutoConfiguration :
+
+Using generated security password: 201ae942-93fe-455f-897b-bb86172cbf99
+
+2023-09-10 22:03:31.856  INFO 8284 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c5bf737, org.springframework.security.web.context.SecurityContextPersistenceFilter@69c14431, org.springframework.security.web.header.HeaderWriterFilter@65bd93ac, org.springframework.security.web.csrf.CsrfFilter@303d07a8, org.springframework.security.web.authentication.logout.LogoutFilter@39070ccf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5f5314f1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2d9ff95c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6b1bd46d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@73b7187c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5242cba4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58395500, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b9dabbb, org.springframework.security.web.session.SessionManagementFilter@72db9678, org.springframework.security.web.access.ExceptionTranslationFilter@515dc105, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ed767c7]
+2023-09-10 22:03:31.891  INFO 8281 --- [           main] .s.s.UserDetailsServiceAutoConfiguration :
+
+Using generated security password: 00dd8d99-9b2a-469a-866a-baeedc64b18e
+
+2023-09-10 22:03:31.986  INFO 8284 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2023-09-10 22:03:31.994  INFO 8284 --- [           main] n.s.l.r.RateCalculatorApplication        : Started RateCalculatorApplication in 8.617 seconds (JVM running for 22.785)
+2023-09-10 22:03:32.062  INFO 8281 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@206b4447, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e3e7aaf, org.springframework.security.web.header.HeaderWriterFilter@568ebf4b, org.springframework.security.web.csrf.CsrfFilter@89f278a, org.springframework.security.web.authentication.logout.LogoutFilter@1d49ff13, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@540525eb, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@36f520c5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2915e7cd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1ba36185, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@681bfef9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f9851f1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f2fdc40, org.springframework.security.web.session.SessionManagementFilter@1062fea0, org.springframework.security.web.access.ExceptionTranslationFilter@42eca4e2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e90042b]
+2023-09-10 22:03:32.183  INFO 8281 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2023-09-10 22:03:32.186  INFO 8281 --- [           main] n.s.l.carservice.CarServiceApplication   : Started CarServiceApplication in 8.488 seconds (JVM running for 22.978)
+

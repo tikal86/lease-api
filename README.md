@@ -17,31 +17,26 @@ Door middel van
 kunnen alle onderdelen van de applicatie gebouwd worden.
 
 #### Run application
-```mvn spring-boot:run```
+```./start.sh```
+Alle vier de services worden nu gestart
+De car service op port 8090
+De customer service op port 8091
+De interest service op port 8092
+De rate calculator op port 8093
 
-Note: the application starts on port 8084.
 
 #### Test API
 
-##### GET Lease Rate
-In order to test leaserate endpoint, first create car in H2 database by using POST endpoint of Car API,
+##### GET all Cars
+
+curl localhost:8090/cars
 
 ###### Create Car
-```POST http://localhost:8081/api/car```
-Request body example:
-```
-{
-"make": "Ford",
-"model": "Ford Fiesta",
-"version": "1",
-"numberOfDoors": 4,
-"co2Emission": 3.8,
-"grossPrice": 34000.8,
-"nettPrice": 30000.9,
-"mileage": 1000
-}
-```
-Get car id which is returned in the response and send this id to the lease rate endpoint
+curl -X POST localhost:8090/car/ -H 'Content-type:application/json' -d '{"make": "Volkswagen", "model": "Tiguan", "version": "Ambition", "numberOfDoors": "4", "grossPrice": "38000", "nettPrice": "36000", "horsePower":"150"}'
+
+##### GET Car
+Get car 0
+curl localhost:8090/cars/0
 
 ###### Get Lease Rate
 ```GET http://localhost:8084/api/lease/leaserate```
@@ -68,19 +63,3 @@ Request body example:
     "interestRate": 3.2
 }
 ```
-
-##### PUT (Update lease details)
-```PUT http://localhost:8084/api/lease/<id>```
-Request body example:
-```
-{
-    "customerId": 1,
-    "carId": 6,
-    "startDate": "19-02-2022",
-    "endDate": "02-05-2022",
-    "interestRate": 7
-}
-```
-
-##### DELETE (Delete lease)
-```DELETE http://localhost:8084/api/lease/<id>```

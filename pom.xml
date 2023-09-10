@@ -45,10 +45,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jersey</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-oauth2-client</artifactId>
-		</dependency>
 
 		<!-- Other dependencies-->
 		<dependency>
@@ -89,36 +85,6 @@
 	</dependencies>
 
 	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>net.masterthought</groupId>
-					<artifactId>maven-cucumber-reporting</artifactId>
-					<version>${version.maven-cucumber-reporting}</version>
-					<executions>
-						<execution>
-							<id>execution</id>
-							<phase>integration-test</phase>
-							<goals>
-								<goal>generate</goal>
-							</goals>
-							<configuration>
-								<projectName>${project.name}</projectName>
-								<skip>false</skip>
-								<outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
-								<inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory>
-								<jsonFiles>
-									<param>**/*.json</param>
-								</jsonFiles>
-								<mergeFeaturesById>false</mergeFeaturesById>
-								<mergeFeaturesWithRetest>false</mergeFeaturesWithRetest>
-								<checkBuildResult>false</checkBuildResult>
-							</configuration>
-						</execution>
-					</executions>
-				</plugin>
-			</plugins>
-		</pluginManagement>
 		<plugins>
 
 			<plugin>
