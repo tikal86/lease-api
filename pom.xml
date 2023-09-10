@@ -27,6 +27,12 @@
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- Test dependencies versions -->
+		<version.maven-surefire-plugin>3.1.2</version.maven-surefire-plugin>
+		<version.maven-failsafe-plugin>3.1.2</version.maven-failsafe-plugin>
+		<version.rest-assured>4.5.1</version.rest-assured> <!-- use same version as in spring-boot-dependencies bom -->
+		<version.jacoco>0.8.10</version.jacoco>
+		<jgiven.version>1.3.0</jgiven.version>
 	</properties>
 
 	<dependencies>
@@ -59,9 +65,72 @@
 		</dependency>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-api</artifactId>
+			<artifactId>junit-jupiter</artifactId>
 			<version>5.10.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.assertj</groupId>
+			<artifactId>assertj-core</artifactId>
+			<version>${assertj.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>${mockito.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.tngtech.jgiven</groupId>
+			<artifactId>jgiven-junit5</artifactId>
+			<version>${jgiven.version}</version>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>net.masterthought</groupId>
+					<artifactId>maven-cucumber-reporting</artifactId>
+					<version>${version.maven-cucumber-reporting}</version>
+					<executions>
+						<execution>
+							<id>execution</id>
+							<phase>integration-test</phase>
+							<goals>
+								<goal>generate</goal>
+							</goals>
+							<configuration>
+								<projectName>${project.name}</projectName>
+								<skip>false</skip>
+								<outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
+								<inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory>
+								<jsonFiles>
+									<param>**/*.json</param>
+								</jsonFiles>
+								<mergeFeaturesById>false</mergeFeaturesById>
+								<mergeFeaturesWithRetest>false</mergeFeaturesWithRetest>
+								<checkBuildResult>false</checkBuildResult>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.1.2</version>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
